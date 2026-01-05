@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: #E9DFD4;
+}
+
+/*---------------------------------------- Navigation/Header  -----------------------------------------------*/
+
+header nav{
+    background-color: #8C4238;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: auto;
+    
+}
+
+li{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5em;
+}
+
+li a{
+    transition: 0.3s;
+}
+
+.links{
+    margin-left: 7em;
+}
+
+
+/*-----------------------------------------    Logo og Ikoner    --------------------------------------------------------*/
+
+.ff-logo{
+    height: 6em;
+}
+
+.hjerte-ikon{
+    height: 2em;
+    width: auto;
+}
+
+.hjerte-a{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.kurv-ikon{
+    height: 2.3em;
+    width: auto;
+}
+
+.kurv-a{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    margin-right: 1em;
+}
+
+.ikon-linje{
+    display: flex;
+    justify-items: center;
+}
+
+li a:hover{
+    color: rgb(189, 189, 189);
+}
+
+.hjerte-a:hover{
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.kurv-a:hover{
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+/*------------------------------------      Bannerbillede          ----------------------------------------*/
+
+.bannerbillede{
+    background-image: url(../img/Bannerbillede.png);
+    background-size: cover;
+    background-position: top;
+    height: 70vh;
+    filter: brightness(90%);
+}
+
+.bannertekst{
+    position: static;
+}
+
+h1{
+    text-align: left;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+}
+
+
+.udvalgsknap{
+    background-color: #8C4238 ;
+    color:white;
+    display: flex;
+    padding: 0.5em 1em;
+    width: 20vw;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: italic;
+    transition: 0.3s;
+    margin-top: 2em;
+    position: relative;
+    top: 5em;
+    border: 0.5px solid white;
+}
+
+.udvalgsknap:hover{
+    background-color: #A85A52 ;
+    color: white;
+    transform: scale(1.05);
+}
+
+/*-------------------------------------------      MOBIL       -------------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+/*----------------------------------              Navigation / Header Mobil                  -------------------------------------*/
+
+    .ff-logo{
+    height: 4em;
+    width: auto;
+    }
+
+    li{
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    }
+
+    .links{
+    display: flex;
+    margin-left: 0.1em;
+    }
+
+    .hjerte-ikon{
+    height: 1.7em;
+    }
+
+    .kurv-ikon{
+    height: 1.9em;
+    }
+
+    .kurv-a{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+    }
+
+   .ikon-linje{
+    display: flex;
+    justify-items: center;
+    }
+
+    .kurv-a:hover{
+    transform: scale(1.2);
+}
+
+    /*------------------------------------      Bannerbillede Mobil          ----------------------------------------*/
+
+    .bannerbillede{
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .bannertekst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bannertekst-mobil{
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        width: auto;
+        font-family: 'corbel', sans-serif;
+        font-size: 1.8em;
+        -webkit-text-stroke: 0.5px black;
+    }
+    
+
+    .udvalgsknap{
+        width: 60vw;
+    }
+
+
+    /*------------------------------------           Kvalitetsmærker Mobil            ---------------------------------------*/
+
+ .kvali-elementer{
+    border-color: #8C4238;
+    border: 4px solid #8C4238;
+    flex-direction: column;
+    }
+
+.kvali-tekst-venstre{
+    color: black;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 2.8em;
+    text-align: center;
+    position: relative;
+    left: 10px;
+    margin-bottom: 2em;
+}
+
+.kvali-tekst-højre{
+    color: black;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 2.8em;
+    text-align: center;
+    position: relative;
+    right: 10px;
+    padding-right: 12.5em;
+    padding-bottom: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.kvali-overskrift{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.kvali-billede{
+    height: 6em;
+    width: auto;
+}
+
+.kvali-midt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.billeder{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em
+}
+
+
+/*------------------------------                  Kategorier                           -----------------------------*/
+
+.menu-supper, .menu-tilbehør{
+display: none;
+}
+
+.menu-pølser{
+    width: 10vw;
+    height: 10vh;
+    padding: 1em;
+}
+
+.pølse{
+    font-size: 0.5em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------       Kvalitetsmærker        --------------------------------------------*/
+
+.kvali-elementer{
+    background-color: #E9DFD4;;
+    display: flex;
+    justify-content: center;
+    border-color: #8C4238;
+    border: 4px solid #8C4238;
+    margin-top: 21em;
+    
+}
+
+.kvali-tekst-venstre{
+    color: black;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 2.8em;
+    text-align: center;
+}
+
+.kvali-tekst-højre{
+    color: black;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 2.8em;
+    text-align: center;
+}
+
+
+.kvali-overskrift{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.kvali-billede{
+    height: 3em;
+    width: auto;
+    margin: 0.2em;
+    border-radius: 10px;
+}
+
+.kvali-midt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*-------------------    Kategorier      ----------------------*/
+
+.kategorier{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background-color: #E9DFD4;;
+    padding: 2em;
+}
+
+.menu-supper, .menu-tilbehør{
+background-size: cover;
+background-position: center;
+width: 30vw;
+height: 40vh;
+margin-top: 2.5em;
+border-radius: 3px;
+transition: 0.3s;
+}
+
+.menu-supper{
+    background-image: url(../img/Forside-supper.png);
+}
+
+.menu-pølser{
+    background-image: url(../img/Produkter-grill\ pølser2.png);
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.menu-tilbehør{
+   background-image: url(../img/Forside-tilbehør.png);
+}
+
+.suppe, .pølse, .tilbehør{
+    color: white;
+    background-color: #8C4238 ;
+    display: flex;
+    padding: 0.1em;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.7em;
+    font-style: italic;
+    transition: 0.3s;
+    position: relative;
+    font-family: 'corbel', sans-serif;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+}
+
+.pølse{
+    top: 0.5em;
+}
+
+.suppe, .tilbehør{
+    top: 0.5em;
+}
+
+.menu-supper:hover, .menu-pølser:hover, .menu-tilbehør:hover{
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.pølse:hover, .suppe:hover, .tilbehør:hover{
+    background-color: #A85A52 ;
+    color: white;
+    transform: scale(1.05);
+}
+
+.pil-venstre, .pil-højre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    margin-top: 9.5em;
+    transition: 0.3s;
+}   
+
+.pil-venstre:hover, .pil-højre:hover{
+    opacity: 0.6;
+    transform: scale(0.9);
+ } 
+
+/*----------------    Mayas kode       ---------------------*/
+
+.story-sektion {
+    width: 100%;                  
+    background-color: #E9DFD4;
+    border: 4px solid #8C4238;     
+    padding: 40px 0;              
+}
+
+.story-inner {
+    width: 90%;                   
+    max-width: 1200px;            
+    margin: 0 auto;                
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 28px;
+    align-items: center;
+    background: #E9DFD4;           
+    box-sizing: border-box;
+}
+
+
+
+.story-text {
+    color: #000;
+    font-family: manrope, sans-serif;
+}
+
+.story-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.story-text .overskrift {
+    margin-bottom: 12px;
+}
+
+.story-text p {
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.story-video {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.story-video:hover{ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+}
+
+.video-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+@media (max-width: 860px) {
+    .story-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .video-frame {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/*----------------------------------------- Alisas kode  ---------------------------------------------*/
+
+.anmeldelser {
+    background-color: #E9DFD4;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.anmeldelser-header h2 {
+    font-size: 2.5rem;
+    margin: 0.3em 0;
+}
+
+.anmeldelser-header p {
+    font-size: 1.2rem;
+}
+
+.header-stars {
+    font-size: 1.8rem;
+    color: #8C4238;
+}
+
+.pil-venstre-anmeldse, .pil-højre-anmeldse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    margin-top: 6.5em;
+    position: relative;
+    transition: 0.3s;
+}   
+
+.pil-venstre-anmeldse{
+    right: 20px;
+}
+
+.pil-højre-anmeldse{
+    left: 20px;
+}  
+
+
+.pil-venstre-anmeldse:hover, .pil-højre-anmeldse:hover{
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+                                                    /*wrapper*/
+
+.anmeldelser-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+
+
+                                                    /*galeri*/
+
+.galleri-container {
+    display: flex;
+    gap: 2em;
+}
+
+.galleri {
+    background-color: #8C4238;
+    color: white;
+    width: 260px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+                                                /* toppen af containern*/
+.galleri-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galleri-stars {
+    font-size: 1rem;
+}
+
+                                                /*tekst i container*/
+.galleri p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 1em 0;
+}
+
+                                        /*bund elementer og tekst i container*/
+.galleri-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galleri-bottom img {
+    width: 70px;
+}
+
+.galleri-bottom span {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+                                                /*Footer desktop*/
+
+footer{
+    background-color: #8C4238;
+    color: white;
+}
+
+.social-icons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social-icons i {
+    font-size: 35px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    opacity: 0.6;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.footer-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8em;
+}
+
+.footer-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-link {
+    text-decoration: underline;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.italic, .footer-klikbar{
+    font-style: italic;
+}
+
+.footer-klikbar{
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-klikbar:hover{
+    opacity: 0.6;
+}
+
+                                                /*betal med*/
+
+.betaling p {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+.betaling img {
+    width: 40px;
+    margin-right: 0.3em;
+    background: #ffffff;
+    padding: 0.25em;
+}
+
+.footer-container {
+        text-align: center;
+    }
+
+.betaling img {
+        margin: 0.2em;
+    }
+
+                                                /*mobil version*/
+
+@media (max-width: 768px) {
+    .pil-venstre-anmeldse, .pil-højre-anmeldse{
+        display: none;
+    }
+
+    .galleri-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galleri {
+        width: 100%;
+        max-width: 320px;
+    }
+
+                                                    /*footer*/
+
+.footer {
+    background-color: #8C4238;
+    color: #ffffff;
+    padding: 3em 2em;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2em;
+}
+
+.footer-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8em;
+}
+
+.footer-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+                                                /*link til nyhedsbrev*/
+.footer-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.social-icons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.social-icons i {
+    font-size: 35px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.social-icons i:hover {
+    opacity: 0.6;
+}
+
+
+                                                    /*betal med*/
+.betaling {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+.betaling img {
+    width: 40px;
+    margin-right: 0.3em;
+    background: #ffffff;
+    padding: 0.25em;
+}
+
+                                                    /*mobil version*/
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .betaling img {
+        margin: 0.2em;
+    }
+}
+    
+}
+
+.skip-link{
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 5px red;
+    text-decoration: none;
+    z-index: 9999;
+} 
