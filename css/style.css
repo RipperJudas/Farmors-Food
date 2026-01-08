@@ -12,10 +12,13 @@ body{
     background-color: #E9DFD4;
 }
 
+header, nav, .udvalgsknap, .suppe, .pølse, .tilbehør{
+    background-color: #8C4238;
+}
+
 /*---------------------------------------- Navigation/Header  -----------------------------------------------*/
 
 header nav{
-    background-color: #8C4238;
     display: flex;
     justify-content: space-between;
 }
@@ -53,17 +56,23 @@ li a{
 
 .ff-logo{
     height: 6em;
+    padding: 0.5em;
+}
+
+.hjerte-a, .kurv-a{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.ikon-linje{
+    display: flex;
+    justify-items: center;
 }
 
 .hjerte-ikon{
     height: 2em;
     width: auto;
-}
-
-.hjerte-a{
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
 }
 
 .kurv-ikon{
@@ -72,32 +81,23 @@ li a{
 }
 
 .kurv-a{
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
     margin-right: 1em;
-}
-
-.ikon-linje{
-    display: flex;
-    justify-items: center;
 }
 
 li a:hover{
     color: rgb(189, 189, 189);
 }
 
-.hjerte-a:hover{
-    opacity: 0.6;
-    transform: scale(1.2);
-}
-
-.kurv-a:hover{
+.hjerte-a:hover, .kurv-a:hover{
     opacity: 0.6;
     transform: scale(1.2);
 }
 
 /*------------------------------------      Bannerbillede          ----------------------------------------*/
+
+h1, h2, .udvalgsknap, .udvalgsknap-position{
+    display: flex;
+}
 
 .bannerbillede{
     background-image: url(../img/Bannerbillede.png);
@@ -106,49 +106,41 @@ li a:hover{
     height: 70vh;
     filter: brightness(90%);
 }
-
-.bannertekst{
-    position: static;
-}
-
-h1{
-    text-align: left;
-    font-size: 1.8em;
-    display: flex;
+h2, h1{
     justify-content: center;
+    font-size: 1.8em;
 }
-
+h1{
+    color: #ffffff;
+    font-style: italic;
+    position: relative;
+    top: 7em;
+}
 h2{
     text-align: center;
-    font-size: 1.8em;
-    display: flex;
-    justify-content: center;
 }
-
-
 .udvalgsknap{
-    background-color: #8C4238 ;
     color:white;
-    display: flex;
-    padding: 0.5em 1em;
+    padding: 0.5em;
     width: 20vw;
     border-radius: 10px;
     text-decoration: none;
     justify-content: center;
-    text-align: center;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.8em;
     font-style: italic;
     transition: 0.3s;
-    margin-top: 2em;
+    margin-top: 0.5em;
     position: relative;
-    top: 5em;
+    top: 4em;
+    left: 21em;
     border: 0.5px solid white;
 }
 
+
+
 .udvalgsknap:hover{
     background-color: #A85A52 ;
-    color: white;
     transform: scale(1.05);
 }
 
@@ -158,211 +150,132 @@ h2{
 
 /*----------------------------------              Navigation / Header Mobil                  -------------------------------------*/
 
+    .kurv-a, .ikon-linje{
+        display: flex;
+        align-items: center;
+    }
     .ff-logo{
     height: 4em;
     width: auto;
     }
-
     li{
     color: white;
     font-size: 1em;
     font-weight: 700;
     }
-
     .links{
     display: flex;
     margin-left: 0.1em;
     }
-
     .hjerte-ikon{
     height: 1.7em;
     }
-
     .kurv-ikon{
     height: 1.9em;
     }
-
     .kurv-a{
-    display: flex;
-    align-items: center;
     margin-right: 0.5em;
     }
-
-   .ikon-linje{
-    display: flex;
-    justify-items: center;
-    }
-
     .kurv-a:hover{
     transform: scale(1.2);
 }
 
     /*------------------------------------      Bannerbillede Mobil          ----------------------------------------*/
 
+    .bannertekst, .bannertekst-mobil, .udvalgsknap{
+        display: flex;
+        justify-content: center;
+    }
     .bannerbillede{
         background-position: center;
         background-size: cover;
         height: 70vh;
     }
-
     .bannertekst{
-        display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
     .bannertekst-mobil{
-        display: flex;
-        justify-items: center;
         text-align: center;
         width: auto;
         font-family: 'corbel', sans-serif;
         font-size: 1.8em;
         -webkit-text-stroke: 0.5px black;
     }
-    
-
     .udvalgsknap{
-        width: 60vw;
+    color:white;
+    padding: 0.5em;
+    height: 3em;
+    width: 10em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8em;
+    font-style: italic;
+    position: relative;
+    top: 3em;
+    left: 3.5em;
+    transition: 0.3s;
+    border: 0.5px solid white;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.5em;
     }
 
 
     /*------------------------------------           Kvalitetsmærker Mobil            ---------------------------------------*/
 
- .kvali-elementer{
-    border-color: #8C4238;
-    border: 4px solid #8C4238;
-    flex-direction: column;
-    }
-
-.kvali-tekst-venstre{
-    color: black;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 700;
-    margin-top: 2.8em;
-    text-align: center;
-    position: relative;
-    left: 10px;
-    margin-bottom: 2em;
-}
-
-.kvali-tekst-højre{
-    color: black;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 700;
-    margin-top: 2.8em;
-    text-align: center;
-    position: relative;
-    right: 10px;
-    padding-right: 12.5em;
-    padding-bottom: 0.1em;
-    margin-bottom: 0.1em;
-}
-
-.kvali-overskrift{
-    color: black;
-    font-size: 1.5em;
-    font-weight: 800;
-    text-align: center;
-}
 
 .kvali-billede{
     height: 6em;
     width: auto;
 }
 
-.kvali-midt{
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-}
-
 .billeder{
     display: flex;
     justify-content: center;
-    padding: 0.5em
+    position: relative;
+    top: 24em;
 }
-
 
 /*------------------------------                  Kategorier                           -----------------------------*/
 
 .menu-supper, .menu-tilbehør{
 display: none;
 }
-
 .menu-pølser{
     width: 10vw;
     height: 10vh;
     padding: 1em;
 }
-
 .pølse{
     font-size: 0.5em;
 }
-
 h2{
     font-size: 1.5em;
 }
-
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------  MOBIL SLUTTER HER  ------------------------------------------------------------------*/
 
 
 
 /*-------------------------------------       Kvalitetsmærker        --------------------------------------------*/
-
-.kvali-elementer{
-    background-color: #E9DFD4;;
+.billeder{
     display: flex;
-    justify-content: center;
-    border-color: #8C4238;
-    border: 4px solid #8C4238;
-    margin-top: 21em;
-    
+    justify-content: flex-end;
+    position: relative;
+    top: 23em;
+    right: 1em;
 }
-
-.kvali-tekst-venstre{
-    color: black;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 700;
-    margin-top: 2.8em;
-    text-align: center;
-}
-
-.kvali-tekst-højre{
-    color: black;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 700;
-    margin-top: 2.8em;
-    text-align: center;
-}
-
-
-.kvali-overskrift{
-    color: black;
-    font-size: 1.5em;
-    font-weight: 800;
-    text-align: center;
-}
-
 .kvali-billede{
-    height: 3em;
-    width: auto;
+    height: 5em;
     margin: 0.2em;
-    border-radius: 10px;
 }
-
 .kvali-midt{
-    display: flex;
-    justify-content: center;
     flex-direction: column;
 }
-
 /*-------------------    Kategorier      ----------------------*/
 
 .kategorier{
@@ -371,22 +284,21 @@ h2{
     gap: 2em;
     background-color: #E9DFD4;;
     padding: 2em;
+    margin-top: 18em;
 }
 
 .menu-supper, .menu-tilbehør{
 background-size: cover;
 background-position: center;
-width: 30vw;
+width: 20vw;
 height: 40vh;
 margin-top: 2.5em;
 border-radius: 3px;
 transition: 0.3s;
 }
-
 .menu-supper{
     background-image: url(../img/Forside-supper.png);
 }
-
 .menu-pølser{
     background-image: url(../img/Produkter-grill\ pølser2.png);
     background-size: cover;
@@ -396,14 +308,11 @@ transition: 0.3s;
     border-radius: 3px;
     transition: 0.3s;
 }
-
 .menu-tilbehør{
    background-image: url(../img/Forside-tilbehør.png);
 }
-
 .suppe, .pølse, .tilbehør{
     color: white;
-    background-color: #8C4238 ;
     display: flex;
     padding: 0.1em;
     border-radius: 10px;
@@ -418,26 +327,21 @@ transition: 0.3s;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     -webkit-text-stroke-width: 1px;
 }
-
 .pølse{
     top: 0.5em;
 }
-
 .suppe, .tilbehør{
     top: 0.5em;
 }
-
 .menu-supper:hover, .menu-pølser:hover, .menu-tilbehør:hover{
     opacity: 0.9;
     transform: scale(1.03);
 }
-
 .pølse:hover, .suppe:hover, .tilbehør:hover{
     background-color: #A85A52 ;
     color: white;
     transform: scale(1.05);
 }
-
 .pil-venstre, .pil-højre{
     display: flex;
     flex-direction: column;
@@ -447,7 +351,6 @@ transition: 0.3s;
     margin-top: 9.5em;
     transition: 0.3s;
 }   
-
 .pil-venstre:hover, .pil-højre:hover{
     opacity: 0.6;
     transform: scale(0.9);
@@ -461,7 +364,6 @@ transition: 0.3s;
     border: 4px solid #8C4238;     
     padding: 40px 0;              
 }
-
 .story-inner {
     width: 90%;                   
     max-width: 1200px;            
@@ -469,44 +371,33 @@ transition: 0.3s;
     display: grid;
     grid-template-columns: 1fr 420px;
     gap: 28px;
-    align-items: center;
-    background: #E9DFD4;           
+    align-items: center;           
     box-sizing: border-box;
 }
-
-
-
 .story-text {
     color: #000;
     font-family: manrope, sans-serif;
 }
-
 .story-text h2 {
     font-size: 2.5em;
     margin-bottom: 15px;
     font-style: italic;
 }
-
-.story-text .overskrift {
+.story-text, .overskrift, .story-text {
     margin-bottom: 12px;
 }
-
 .story-text p {
-    margin-bottom: 12px;
     font-size: 1.5em;
     text-align: center;
 }
-
 .story-video {
     width: 100%;
     transition: 0.3s;
 }
-
 .story-video:hover{ 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0.7;
 }
-
 .video-poster {
     width: 100%;
     height: auto;
@@ -514,43 +405,38 @@ transition: 0.3s;
     object-fit: contain;
     border-radius: 4px;
 }
-
 @media (max-width: 860px) {
     .story-inner {
         grid-template-columns: 1fr;
         text-align: center;
     }
-
     .video-frame {
         max-width: 90%;
         margin: 0 auto;
     }
 }
-
-
-
 /*----------------------------------------- Alisas kode  ---------------------------------------------*/
+
+.anmeldelser-wrapper, .galleri-container, .galleri, .galleri-top{
+    display: flex;
+}
 
 .anmeldelser {
     background-color: #E9DFD4;
     padding: 4em 2em;
     text-align: center;
 }
-
 .anmeldelser-header h2 {
     font-size: 2.5rem;
     margin: 0.3em 0;
 }
-
 .anmeldelser-header p {
     font-size: 1.2rem;
 }
-
 .header-stars {
     font-size: 1.8rem;
     color: #8C4238;
 }
-
 .pil-venstre-anmeldse, .pil-højre-anmeldse{
     display: flex;
     flex-direction: column;
@@ -561,36 +447,26 @@ transition: 0.3s;
     position: relative;
     transition: 0.3s;
 }   
-
 .pil-venstre-anmeldse{
     right: 20px;
 }
-
 .pil-højre-anmeldse{
     left: 20px;
 }  
-
-
 .pil-venstre-anmeldse:hover, .pil-højre-anmeldse:hover{
     opacity: 0.6;
     transform: scale(0.9);
 }
-
                                                     /*wrapper*/
 
 .anmeldelser-wrapper {
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 3em;
 }
-
-
-
                                                     /*galeri*/
 
 .galleri-container {
-    display: flex;
     gap: 2em;
 }
 
@@ -599,14 +475,12 @@ transition: 0.3s;
     color: white;
     width: 260px;
     padding: 1.5em;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
                                                 /* toppen af containern*/
 .galleri-top {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
