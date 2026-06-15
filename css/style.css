@@ -28,7 +28,6 @@ nav ul{
     align-items: center;
     list-style-type: none;
     height: auto;
-    
 }
 
 li{
@@ -137,11 +136,8 @@ h2{
     border: 0.5px solid white;
 }
 
-
-
 .udvalgsknap:hover{
     background-color: #A85A52 ;
-    transform: scale(1.05);
 }
 
 /*-------------------------------------------      MOBIL       -------------------------------------------------------*/
